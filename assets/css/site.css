@@ -227,34 +227,15 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
 .band__foot { position: relative; margin: 30px auto 0; padding-top: 22px; border-top: 1px solid rgba(255, 255, 255, .15); font-size: 13px; color: rgba(255, 255, 255, .6); text-align: center; }
 
 /* ---------- services ---------- */
-.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; }
-.tab {
-  display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 9px 16px;
-  border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--muted);
-  font: 600 13px/1 var(--font-sans); cursor: pointer; white-space: nowrap;
-  transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease);
+/* the services section is one block now: a single appointment type, not a catalogue */
+.only {
+  max-width: 640px; margin: 0; padding: 30px 32px 32px;
+  border: 1px solid var(--line); border-radius: 3px; background: var(--paper);
+  box-shadow: var(--shadow-card);
 }
-.tab:hover { border-color: var(--gold); color: var(--ink); }
-.tab[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
-.tab__count { font-size: 11px; opacity: .6; font-variant-numeric: tabular-nums; }
-.services { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0; padding: 0; list-style: none; }
-.service { display: flex; }
-.service__btn {
-  display: grid; gap: 7px; width: 100%; padding: 22px 20px 18px; text-align: left; cursor: pointer;
-  border: 1px solid var(--line); border-radius: 3px; background: var(--paper); color: inherit; font: inherit;
-  transition: border-color .2s var(--ease), box-shadow .2s var(--ease), transform .2s var(--ease);
-}
-.service__btn:hover { border-color: var(--gold); box-shadow: var(--shadow-card); transform: translateY(-2px); }
-.service__icon { color: var(--gold); font-size: 24px; line-height: 0; }
-.service__cat { font: 600 9.5px/1 var(--font-sans); letter-spacing: .15em; text-transform: uppercase; color: var(--muted); }
-.service__name { font-family: var(--font-display); font-weight: 500; font-size: 20px; line-height: 1.22; letter-spacing: -.01em; }
-.service__desc { font-size: 13.5px; color: var(--muted); line-height: 1.5; }
-.service__cta { display: inline-flex; align-items: center; gap: 7px; margin-top: 6px; font: 600 12.5px/1 var(--font-sans); color: var(--navy); }
-.service__cta .icon { transition: transform .2s var(--ease); }
-.service__btn:hover .service__cta .icon { transform: translateX(3px); }
-.services__empty { margin: 28px 0 0; color: var(--muted); }
-.services__more { margin: 22px 0 0; text-align: center; }
-.services__more .btn { min-width: 220px; }
+.only__kicker { margin: 0; font: 600 10px/1 var(--font-sans); letter-spacing: .16em; text-transform: uppercase; color: var(--gold-ink); }
+.only__title { margin: 12px 0 0; font-family: var(--font-display); font-weight: 500; font-size: 30px; line-height: 1.1; letter-spacing: -.015em; }
+.only__text { margin: 12px 0 24px; color: var(--muted); font-size: 15px; max-width: 48ch; }
 
 /* ---------- team ---------- */
 /* the only team photo the practice has is 500px wide — cap it so it is never blown up much past 2x */
@@ -285,8 +266,11 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
 }
 
 /* ---------- technology ---------- */
-.tech__grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: clamp(32px, 5vw, 64px); align-items: start; }
-.facts { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+/* the photos moved out to a full-width gallery, so the copy keeps a readable measure
+   and the four facts sit two-up instead of in a single tall column */
+.tech__grid { display: grid; gap: clamp(32px, 5vw, 64px); }
+.tech__copy .lead { max-width: 60ch; }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 0; padding: 0; list-style: none; }
 .fact {
   display: grid; grid-template-columns: auto 1fr; gap: 4px 16px;
   padding: 20px 22px; border: 1px solid var(--line); border-radius: 3px; background: var(--paper);
@@ -294,21 +278,21 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
 .fact__icon { grid-row: span 2; color: var(--gold); font-size: 22px; line-height: 0; padding-top: 3px; }
 .fact strong { font-family: var(--font-display); font-weight: 500; font-size: 19px; line-height: 1.25; }
 .fact > span:last-child { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
-.tech__shot { margin: 0; padding: 18px; border: 1px solid var(--line); border-radius: 3px; background: var(--paper); }
-.tech__shot img { width: 100%; }
-.tech__shot figcaption { margin-top: 12px; font-size: 12.5px; color: var(--muted); }
-.tech__shot2 { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--line); }
+.gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px;
+  margin: clamp(32px, 5vw, 56px) auto 0; padding: 0; list-style: none; }
+.gallery figure { margin: 0; padding: 14px; height: 100%;
+  border: 1px solid var(--line); border-radius: 3px; background: var(--paper); }
+/* the four photos are different shapes, so crop them to one ratio rather than letting
+   the row go ragged; height:auto is off here on purpose, the ratio does the sizing */
+.gallery img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 2px; }
+.gallery figcaption { margin-top: 11px; font-size: 12.5px; line-height: 1.5; color: var(--muted); }
 
 /* ---------- reviews ---------- */
-/* .reviews / .review are unused while the section carries no quotes — kept because the markup
-   goes back the day the practice supplies review text they are happy to publish */
 .reviews { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0; padding: 0; list-style: none; }
 .review { display: grid; gap: 12px; padding: 26px 24px; border: 1px solid var(--line); border-radius: 3px; background: var(--bg); }
 .review p { margin: 0; font-family: var(--font-display); font-size: 19.5px; line-height: 1.45; }
 .review__who { font: 600 11px/1 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-.reviews__stars { margin: 18px 0 0; }
-.reviews__stars .stars { font-size: 20px; }
-.reviews__cta { margin: 22px 0 0; }
+.reviews__cta { margin: 26px 0 0; }
 
 /* ---------- contact ---------- */
 .contact-grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(24px, 3vw, 40px); align-items: start; }
@@ -507,15 +491,28 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
 .js .reveal-3 { transition-delay: .12s; }
 
 /* ---------- breakpoints ---------- */
-@media (max-width: 1080px) {
-  .hero__grid { grid-template-columns: minmax(0, 1fr); }
-  .quick { max-width: 520px; }
-  .services { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .reviews { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .tech__grid { grid-template-columns: minmax(0, 1fr); }
-  .tech__shot { max-width: 380px; }
+/* Between roughly 900 and 1200 the hero used to stack, which left the booking card in a 520px
+   stub with 400px of empty ivory beside it. Keep the two columns down to 900 instead, on a
+   narrower card and a smaller headline, and only stack once there is genuinely no room. */
+@media (max-width: 1200px) {
+  .hero__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 408px); gap: 40px; }
+  .hero__title { font-size: clamp(38px, 4.8vw, 54px); }
+  .hero__lead { font-size: 16.5px; }
+  .hero__stats { gap: 26px; }
+  .hero__stats strong { font-size: 31px; }
 }
+
+@media (max-width: 1080px) {
+  .reviews { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  /* stacked, the photo card spans the column — a 380px stub left the right half empty */
+  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 @media (max-width: 900px) {
+  .hero__grid { grid-template-columns: minmax(0, 1fr); }
+  /* stacked: nothing is held back to a column width, so there is no empty strip */
+  .hero__lead { max-width: none; }
+  .quick { max-width: none; }
   .nav__links, .nav__book { display: none; }
   .burger { display: inline-flex; }
   .header.is-open .nav__links {
@@ -533,7 +530,6 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
 @media (max-width: 767px) {
   .mbar { display: flex; }
   .footer { padding-bottom: 96px; }
-  .services { grid-template-columns: minmax(0, 1fr); }
   .bk__pane--when { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 640px) {
@@ -541,8 +537,6 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
   :root { --header-h: 66px; }
   .hero__stats { gap: 22px; }
   .hero__stats strong { font-size: 30px; }
-  .tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 6px; scrollbar-width: none; }
-  .tabs::-webkit-scrollbar { display: none; }
   .person { flex-direction: column; gap: 14px; }
   .bk { width: 100%; max-width: none; max-height: 100%; height: 100%; margin: 0; border-radius: 0; }
   .bk__send { grid-template-columns: minmax(0, 1fr); }

@@ -62,44 +62,11 @@
     'band.1': 'Year founded', 'band.2': 'Rating on Google', 'band.3': 'Patient reviews', 'band.4': 'Doctors in the team',
     'band.foot': 'Founded by Dr. Kiril Nechakovski. Nominated for the TOP-100 Achievements 2020 Award by the Achievements Forum, United Kingdom, in the healthcare category.',
     'sv.eyebrow': 'What we do', 'sv.title': 'Complete dental care', 'sv.title2': 'in one place.',
-    'sv.lead': 'Pick a category, or just book a check-up and we will work out what you need together.',
-    'sv.cats': 'Service categories', 'sv.empty': 'No services in this category.',
-    'cat.all': 'All', 'cat.general': 'General', 'cat.prosthetics': 'Prosthodontics', 'cat.aesthetic': 'Cosmetic',
-    'cat.children': "Children's", 'cat.perio': 'Perio & laser', 'cat.xray': 'X-ray',
-    's.book': 'Book a check-up',
-    's.plombi': 'Fillings', 's.plombi.d': 'Aesthetic nano-composite, microhybrid and glass-ionomer fillings.',
-    's.lekuvanje': 'Treating decayed teeth', 's.lekuvanje.d': 'Treatment of caries and diseased teeth, preserving healthy tooth tissue.',
-    's.endodoncija': 'Root canal treatment', 's.endodoncija.d': 'Endodontic treatment of the root canals.',
-    's.ekstrakcii': 'Extractions', 's.ekstrakcii.d': 'Extractions and basic oral surgery under local anaesthetic.',
-    's.kamenec': 'Scaling', 's.kamenec.d': 'Ultrasonic removal of calculus.',
-    's.polirawe': 'Polishing', 's.polirawe.d': 'Removal of soft deposits with polishing.',
-    's.fluor': 'Fluoride protection', 's.fluor.d': 'Protecting teeth from decay with fluoride preparations.',
-    's.metalkeramika': 'Metal-ceramic crowns and bridges', 's.metalkeramika.d': 'Porcelain work on a metal base.',
-    's.bezmetalni': 'All-ceramic work', 's.bezmetalni.d': 'Crowns, bridges, inlays, onlays and veneers for the highest aesthetics.',
-    's.blagorodni': 'High noble alloy work', 's.blagorodni.d': 'Metal-ceramic on a gold and platinum base.',
-    's.implanti': 'Implants', 's.implanti.d': 'Planning and prosthetic restoration. Certified for Straumann, BioHorizons and Impla Schütz Dental.',
-    's.metalkompozit': 'Metal-composite work', 's.metalkompozit.d': 'Cast faced classic crowns and bridges.',
-    's.akrilatni': 'Acrylic dentures', 's.akrilatni.d': 'Classic partial and full dentures.',
-    's.skeletirani': 'Cast-frame dentures', 's.skeletirani.d': 'Vitallium and metal dentures with precision attachments.',
-    's.nadogradbi': 'Cast posts and cores', 's.nadogradbi.d': 'Rebuilding badly damaged teeth before a crown.',
-    's.fiberglas': 'Fibreglass posts', 's.fiberglas.d': 'Rebuilding teeth with fibreglass posts.',
-    's.viniri': 'Veneers and laminates', 's.viniri.d': 'In porcelain or composite, for teeth that have changed colour, shape or position.',
-    's.belenje': 'Teeth whitening', 's.belenje.d': 'Bleaching supervised by a dentist.',
-    's.dijastema': 'Closing a diastema', 's.dijastema.d': 'Resolving a gap between the front teeth.',
-    's.fileri': 'Hyaluronic fillers', 's.fileri.d': 'Facial aesthetics with Cytosial and Apriline, by a trained doctor.',
-    's.mlecniplombi': 'Fillings for milk teeth', 's.mlecniplombi.d': 'Milk teeth and young permanent teeth.',
-    's.mlecnilek': 'Treating milk teeth', 's.mlecnilek.d': 'Treatment of milk and young permanent teeth.',
-    's.prevencija': 'Fluoride prevention', 's.prevencija.d': 'Planning and monitoring of caries prevention.',
-    's.zalevanje': 'Fissure sealing', 's.zalevanje.d': 'Protecting the grooves of children’s teeth.',
-    's.gingivitis': 'Gingivitis treatment', 's.gingivitis.d': 'Conservative treatment of inflamed gums.',
-    's.parodontopatija': 'Periodontitis treatment', 's.parodontopatija.d': 'Conservative and laser-assisted therapy.',
-    's.labr': 'LABR laser reduction', 's.labr.d': 'Laser Assisted Bacterial Reduction in the treatment of periodontitis.',
-    's.alveolitis': 'Alveolitis treatment', 's.alveolitis.d': 'Laser therapy for complications after an extraction.',
-    's.periapikalni': 'Periapical lesions', 's.periapikalni.d': 'Laser therapy for inflammation above the root of the tooth.',
-    's.laserhirurgija': 'Laser surgery', 's.laserhirurgija.d': 'With the Sirona Sirolaser Blue.',
-    's.lllt': 'Laser therapy (LLLT)', 's.lllt.d': 'With two lasers — 904 nm and 658 nm.',
-    's.panoramsko': 'Digital panoramic imaging', 's.panoramsko.d': 'With the KaVo OP 3D — teeth, jaws, sinuses and the jaw joint, at the lowest dose.',
-    's.periapikalnisnimki': 'Digital periapical radiographs', 's.periapikalnisnimki.d': 'Images of individual teeth during treatment.',
+    'sv.lead': 'Prosthetics, implants, aesthetics, children’s dentistry, periodontology, laser therapy and digital X-ray — all of it starts with one check-up.',
+    'only.kicker': 'One kind of appointment',
+    'only.title': 'Check-up · 30 minutes',
+    'only.text': 'You come in for a check-up. We look at what is bothering you, explain what comes next and decide on the treatment together — no need to pick a service in advance.',
+    'only.cta': 'Book a check-up',
     'team.eyebrow': 'Who will see you', 'team.title': 'The doctors', 'team.title2': 'and the team.',
     'team.photoAlt': 'The team of Dr. Nechakovski Dental Practice in the practice, 2025',
     'team.photoCap': 'The practice team, 2025.',
@@ -130,6 +97,10 @@
     'tech.shotCap': 'KaVo OP 3D — digital panoramic imaging of the teeth, jaws, sinuses and jaw joint.',
     'tech.shot2Alt': 'An Ivoclar curing light in the surgery',
     'tech.shot2Cap': 'Ivoclar curing light — for setting the aesthetic composite fillings.',
+    'tech.shot3Alt': 'Two dentists in sterile gowns during a surgical procedure',
+    'tech.shot3Cap': 'A procedure under sterile conditions — Dr. Kiril and Dr. Aleksandar Nechakovski.',
+    'tech.shot4Alt': 'The reception and waiting area of the practice',
+    'tech.shot4Cap': 'Reception and the waiting area — where every visit starts.',
     'rev.eyebrow': 'What patients say', 'rev.title': '4.9 out of 5', 'rev.title2': 'on Google.',
     'rev.link': 'Read the reviews on Google', 'rev.fine': 'Rated 4.9 from 31 reviews on Google, October 2026.',
     'c.eyebrow': 'Where we are', 'c.title': 'In the centre', 'c.title2': 'of Bitola.',
@@ -186,44 +157,11 @@
     'band.1': 'Έτος ίδρυσης', 'band.2': 'Βαθμολογία στο Google', 'band.3': 'Κριτικές ασθενών', 'band.4': 'Γιατροί στην ομάδα',
     'band.foot': 'Ιδρύθηκε από τον Δρ. Κύριλ Νετσακόφσκι. Υποψήφιο για το βραβείο TOP-100 Achievements 2020 του Achievements Forum, Ηνωμένο Βασίλειο, στην κατηγορία υγείας.',
     'sv.eyebrow': 'Τι κάνουμε', 'sv.title': 'Πλήρης οδοντιατρική φροντίδα', 'sv.title2': 'σε έναν χώρο.',
-    'sv.lead': 'Επιλέξτε κατηγορία, ή κλείστε ραντεβού και θα αποφασίσουμε μαζί τι χρειάζεστε.',
-    'sv.cats': 'Κατηγορίες υπηρεσιών', 'sv.empty': 'Δεν υπάρχουν υπηρεσίες σε αυτή την κατηγορία.',
-    'cat.all': 'Όλες', 'cat.general': 'Γενική', 'cat.prosthetics': 'Προσθετική', 'cat.aesthetic': 'Αισθητική',
-    'cat.children': 'Παιδική', 'cat.perio': 'Περιοδοντολογία & laser', 'cat.xray': 'Ακτινογραφία',
-    's.book': 'Κλείστε ραντεβού',
-    's.plombi': 'Σφραγίσματα', 's.plombi.d': 'Αισθητικά νανο-σύνθετα, μικροϋβριδικά και υαλοϊονομερή σφραγίσματα.',
-    's.lekuvanje': 'Θεραπεία δοντιών', 's.lekuvanje.d': 'Αντιμετώπιση τερηδόνας και πάσχοντων δοντιών, με διατήρηση του υγιούς ιστού.',
-    's.endodoncija': 'Απονεύρωση', 's.endodoncija.d': 'Ενδοδοντική θεραπεία των ριζικών σωλήνων.',
-    's.ekstrakcii': 'Εξαγωγές', 's.ekstrakcii.d': 'Εξαγωγές και βασική στοματική χειρουργική με τοπική αναισθησία.',
-    's.kamenec': 'Αφαίρεση πέτρας', 's.kamenec.d': 'Αφαίρεση οδοντικής πέτρας με υπερήχους.',
-    's.polirawe': 'Στίλβωση', 's.polirawe.d': 'Αφαίρεση μαλακών επικαθίσεων με στίλβωση.',
-    's.fluor': 'Προστασία με φθόριο', 's.fluor.d': 'Προστασία των δοντιών από την τερηδόνα με σκευάσματα φθορίου.',
-    's.metalkeramika': 'Μεταλλοκεραμικές στεφάνες και γέφυρες', 's.metalkeramika.d': 'Πορσελάνινες εργασίες σε μεταλλική βάση.',
-    's.bezmetalni': 'Ολοκεραμικές εργασίες', 's.bezmetalni.d': 'Στεφάνες, γέφυρες, ένθετα, επένθετα και όψεις για την υψηλότερη αισθητική.',
-    's.blagorodni': 'Εργασίες με ευγενή κράματα', 's.blagorodni.d': 'Μεταλλοκεραμική σε βάση χρυσού και λευκόχρυσου.',
-    's.implanti': 'Εμφυτεύματα', 's.implanti.d': 'Σχεδιασμός και προσθετική αποκατάσταση. Πιστοποίηση για Straumann, BioHorizons και Impla Schütz Dental.',
-    's.metalkompozit': 'Μεταλλοσύνθετες εργασίες', 's.metalkompozit.d': 'Χυτές επενδεδυμένες κλασικές στεφάνες και γέφυρες.',
-    's.akrilatni': 'Ακρυλικές οδοντοστοιχίες', 's.akrilatni.d': 'Κλασικές μερικές και ολικές οδοντοστοιχίες.',
-    's.skeletirani': 'Σκελετωτές οδοντοστοιχίες', 's.skeletirani.d': 'Οδοντοστοιχίες με μεταλλικό σκελετό και συνδέσμους ακριβείας.',
-    's.nadogradbi': 'Χυτοί άξονες', 's.nadogradbi.d': 'Αποκατάσταση πολύ κατεστραμμένων δοντιών πριν από στεφάνη.',
-    's.fiberglas': 'Άξονες υαλονημάτων', 's.fiberglas.d': 'Αποκατάσταση δοντιών με άξονες υαλονημάτων.',
-    's.viniri': 'Όψεις και laminates', 's.viniri.d': 'Από πορσελάνη ή σύνθετη ρητίνη, για δόντια με αλλοιωμένο χρώμα, σχήμα ή θέση.',
-    's.belenje': 'Λεύκανση δοντιών', 's.belenje.d': 'Λεύκανση υπό την επίβλεψη οδοντιάτρου.',
-    's.dijastema': 'Κλείσιμο διαστήματος', 's.dijastema.d': 'Αντιμετώπιση του κενού ανάμεσα στα μπροστινά δόντια.',
-    's.fileri': 'Υαλουρονικά fillers', 's.fileri.d': 'Αισθητική προσώπου με Cytosial και Apriline, από εκπαιδευμένο γιατρό.',
-    's.mlecniplombi': 'Σφραγίσματα νεογιλών δοντιών', 's.mlecniplombi.d': 'Νεογιλά και νεαρά μόνιμα δόντια.',
-    's.mlecnilek': 'Θεραπεία νεογιλών δοντιών', 's.mlecnilek.d': 'Αντιμετώπιση νεογιλών και νεαρών μόνιμων δοντιών.',
-    's.prevencija': 'Πρόληψη με φθόριο', 's.prevencija.d': 'Σχεδιασμός και παρακολούθηση της πρόληψης της τερηδόνας.',
-    's.zalevanje': 'Σφράγιση οπών και σχισμών', 's.zalevanje.d': 'Προστασία των αυλάκων στα δόντια των παιδιών.',
-    's.gingivitis': 'Θεραπεία ουλίτιδας', 's.gingivitis.d': 'Συντηρητική θεραπεία της φλεγμονής των ούλων.',
-    's.parodontopatija': 'Θεραπεία περιοδοντίτιδας', 's.parodontopatija.d': 'Συντηρητική θεραπεία και υποβοήθηση με laser.',
-    's.labr': 'Μείωση βακτηρίων με laser (LABR)', 's.labr.d': 'Laser Assisted Bacterial Reduction στη θεραπεία της περιοδοντίτιδας.',
-    's.alveolitis': 'Θεραπεία φατνιίτιδας', 's.alveolitis.d': 'Θεραπεία με laser για επιπλοκές μετά από εξαγωγή.',
-    's.periapikalni': 'Περιακρορριζικές βλάβες', 's.periapikalni.d': 'Θεραπεία με laser για φλεγμονές πάνω από τη ρίζα του δοντιού.',
-    's.laserhirurgija': 'Χειρουργική με laser', 's.laserhirurgija.d': 'Με το Sirona Sirolaser Blue.',
-    's.lllt': 'Θεραπεία με laser (LLLT)', 's.lllt.d': 'Με δύο laser — 904 nm και 658 nm.',
-    's.panoramsko': 'Ψηφιακή πανοραμική ακτινογραφία', 's.panoramsko.d': 'Με το KaVo OP 3D — δόντια, γνάθοι, ιγμόρεια και κροταφογναθική άρθρωση, με την ελάχιστη δόση.',
-    's.periapikalnisnimki': 'Ψηφιακές περιακρορριζικές ακτινογραφίες', 's.periapikalnisnimki.d': 'Λήψεις μεμονωμένων δοντιών κατά τη διάρκεια της θεραπείας.',
+    'sv.lead': 'Προσθετική, εμφυτεύματα, αισθητική, παιδοδοντία, περιοδοντολογία, θεραπεία λέιζερ και ψηφιακή ακτινογραφία — όλα ξεκινούν με μία εξέταση.',
+    'only.kicker': 'Ένα είδος ραντεβού',
+    'only.title': 'Εξέταση · 30 λεπτά',
+    'only.text': 'Έρχεστε για εξέταση. Βλέπουμε τι σας ενοχλεί, σας εξηγούμε τι ακολουθεί και αποφασίζουμε μαζί για τη θεραπεία — χωρίς να επιλέξετε υπηρεσία εκ των προτέρων.',
+    'only.cta': 'Κλείστε εξέταση',
     'team.eyebrow': 'Ποιος σας περιμένει', 'team.title': 'Οι γιατροί', 'team.title2': 'και η ομάδα.',
     'team.photoAlt': 'Η ομάδα του οδοντιατρείου Δρ. Νετσακόφσκι στο ιατρείο, 2025',
     'team.photoCap': 'Η ομάδα του ιατρείου, 2025.',
@@ -254,6 +192,10 @@
     'tech.shotCap': 'KaVo OP 3D — ψηφιακή πανοραμική απεικόνιση δοντιών, γνάθων, ιγμορείων και κροταφογναθικής άρθρωσης.',
     'tech.shot2Alt': 'Λάμπα πολυμερισμού Ivoclar στο ιατρείο',
     'tech.shot2Cap': 'Λάμπα πολυμερισμού Ivoclar — για τον πολυμερισμό των αισθητικών σύνθετων εμφράξεων.',
+    'tech.shot3Alt': 'Δύο οδοντίατροι με αποστειρωμένη ενδυμασία σε χειρουργική επέμβαση',
+    'tech.shot3Cap': 'Επέμβαση σε άσηπτες συνθήκες — ο Δρ. Κίριλ και ο Δρ. Αλεξάνταρ Νετσακόφσκι.',
+    'tech.shot4Alt': 'Η ρεσεψιόν και η αίθουσα αναμονής του ιατρείου',
+    'tech.shot4Cap': 'Η ρεσεψιόν και η αίθουσα αναμονής — από εδώ ξεκινά κάθε επίσκεψη.',
     'rev.eyebrow': 'Τι λένε οι ασθενείς', 'rev.title': '4,9 στα 5', 'rev.title2': 'στο Google.',
     'rev.link': 'Διαβάστε τις κριτικές στο Google', 'rev.fine': 'Βαθμολογία 4,9 από 31 κριτικές στο Google, Οκτώβριος 2026.',
     'c.eyebrow': 'Πού βρισκόμαστε', 'c.title': 'Στο κέντρο', 'c.title2': 'της Μπίτολα.',
@@ -299,7 +241,6 @@
       'status.tomorrow': 'Отвораме утре во {t}',
       'status.monday': 'Отвораме во понеделник во {t}',
       'map.title': 'Мапа со локацијата на ординацијата',
-      'sv.all': 'Прикажи ги сите услуги', 'sv.less': 'Прикажи помалку',
       'hours.weekdays': 'Понеделник – петок', 'hours.weekend': 'Сабота – недела', 'hours.closed': 'Затворено',
       'bk.t1': 'Изберете ден и час', 'bk.t2': 'Вашите податоци', 'bk.t3': 'Потврдете го барањето',
       'bk.tDone': 'Барањето е подготвено',
@@ -328,7 +269,6 @@
       'status.tomorrow': 'We open tomorrow at {t}',
       'status.monday': 'We open on Monday at {t}',
       'map.title': 'Map showing the location of the practice',
-      'sv.all': 'Show all services', 'sv.less': 'Show fewer',
       'hours.weekdays': 'Monday – Friday', 'hours.weekend': 'Saturday – Sunday', 'hours.closed': 'Closed',
       'bk.t1': 'Choose a day and a time', 'bk.t2': 'Your details', 'bk.t3': 'Confirm your request',
       'bk.tDone': 'Your request is ready',
@@ -357,7 +297,6 @@
       'status.tomorrow': 'Ανοίγουμε αύριο στις {t}',
       'status.monday': 'Ανοίγουμε τη Δευτέρα στις {t}',
       'map.title': 'Χάρτης με την τοποθεσία του ιατρείου',
-      'sv.all': 'Δείτε όλες τις υπηρεσίες', 'sv.less': 'Δείτε λιγότερες',
       'hours.weekdays': 'Δευτέρα – Παρασκευή', 'hours.weekend': 'Σάββατο – Κυριακή', 'hours.closed': 'Κλειστά',
       'bk.t1': 'Επιλέξτε ημέρα και ώρα', 'bk.t2': 'Τα στοιχεία σας', 'bk.t3': 'Επιβεβαιώστε το αίτημα',
       'bk.tDone': 'Το αίτημά σας είναι έτοιμο',
@@ -451,7 +390,6 @@
       if (node.dataset.counted !== 'pending') showNumber(node, Number(node.dataset.num));
     });
     renderHours();
-    renderServices();
     updateStatus();
     if (dialog && dialog.open) renderBooking();
     try { localStorage.setItem('nd-lang', lang); } catch (e) { /* storage blocked */ }
@@ -658,63 +596,6 @@
       });
     }
     $$('#nav-links a').forEach(function (a) { a.addEventListener('click', closeMenu); });
-  }
-
-  /* All 33 services at once buried the rest of the page, so the grid shows the
-     first few of whatever is selected and the button opens the rest. The tab
-     counts still describe the full category, not what is on screen. */
-  var SERVICES_SHOWN = 6;
-  var svFilter = 'all';
-  var svExpanded = false;
-
-  function renderServices() {
-    var cards = $$('.service');
-    if (!cards.length) return;
-    var empty = $('[data-services-empty]');
-    var more = $('[data-services-more]');
-    var matched = 0;
-
-    var filter = svFilter || 'all';   // applyLanguage can run before the var above is assigned
-    cards.forEach(function (card) {
-      var match = filter === 'all' || card.dataset.cat === filter;
-      if (match) matched++;
-      card.hidden = !match || (!svExpanded && matched > SERVICES_SHOWN);
-    });
-
-    if (empty) empty.hidden = matched > 0;
-    if (more) {
-      more.hidden = matched <= SERVICES_SHOWN;
-      more.textContent = svExpanded ? t('sv.less') : t('sv.all') + ' (' + matched + ')';
-      more.setAttribute('aria-expanded', String(svExpanded));
-    }
-  }
-
-  function setupFilters() {
-    var tabs = $$('[data-tabs] .tab');
-    var more = $('[data-services-more]');
-
-    tabs.forEach(function (tab) {
-      tab.addEventListener('click', function () {
-        svFilter = tab.dataset.filter;
-        svExpanded = false;
-        tabs.forEach(function (other) { other.setAttribute('aria-pressed', String(other === tab)); });
-        renderServices();
-      });
-    });
-
-    if (more) {
-      more.addEventListener('click', function () {
-        svExpanded = !svExpanded;
-        renderServices();
-        // collapsing from the foot of a 33-card list would strand the viewport below the grid
-        if (!svExpanded) {
-          var tabsRow = $('[data-tabs]');
-          if (tabsRow) tabsRow.scrollIntoView({ block: 'center' });
-        }
-      });
-    }
-
-    renderServices();
   }
 
   function setupMap() {
@@ -1134,7 +1015,6 @@
   } catch (e) { /* storage blocked */ }
 
   setupHeader();
-  setupFilters();
   setupMap();
   setupBooking();
   applyLanguage(initial);
