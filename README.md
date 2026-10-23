@@ -175,14 +175,16 @@ Things only they can hand over. Everything else on the list below can be decided
 - [ ] **Photos of Dr. Hristina Stojcheska and Dr. Elena Vrtkovska** — they are the only two with
       no portrait and currently show a monogram. Also worth asking for a current set of interior
       and treatment photos; see the photo note on the checklist below.
-- [ ] **Real review text** for the three cards in `#recenzii`, or permission to drop them.
+- [ ] **Review text, only if they want quotes back.** The section reads fine without them. If
+      they do, the `.reviews` / `.review` styles are still in `site.css` and the markup is three
+      `<li class="review">` cards.
 - [ ] **Confirmation of the bookable window** — is 08:00–20:00 right for check-ups specifically?
 
 ## Before this goes public
 
-- [ ] **Review quotes** — the three cards in `#recenzii` are PLACEHOLDER text. The rating (4,9)
-      and the review count (31) are verified from Google; the quotes are not. Replace them with
-      real review text, or delete the three cards and keep the rating and the Google link.
+- [x] **Review quotes** — three placeholder cards were removed. `#recenzii` now carries only what
+      is verified from Google: the 4,9 rating, the star row, the count of 31, and a button
+      through to the real reviews. Nothing on the page is invented.
 - [ ] **Greek translation** — written for this site; the practice had no Greek version. Needs a
       native speaker's pass.
 - [ ] **Show the client the darker gold.** Gold text on light is no longer the preview's
