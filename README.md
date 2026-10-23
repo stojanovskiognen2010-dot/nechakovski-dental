@@ -3,6 +3,11 @@
 Static site for **Стоматолошка ординација Д-р Нечаковски** (Dr. Nechakovski Dental Practice),
 ул. Филип Втори Македонски 54-1/1, Битола. Plain HTML/CSS/JS — no build step, no dependencies.
 
+**Live:** <https://stojanovskiognen2010-dot.github.io/nechakovski-dental/> — GitHub Pages from
+`main` at the repository root, so every push to `main` redeploys. It is still `noindex, nofollow`,
+so the link works for anyone you send it to but the site will not appear in search results until
+that meta tag is removed (last item on the checklist below).
+
 ```
 index.html              one page, Macedonian in the markup
 assets/css/site.css     design tokens + components
