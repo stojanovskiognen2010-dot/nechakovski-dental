@@ -300,11 +300,15 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
 .tech__shot2 { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--line); }
 
 /* ---------- reviews ---------- */
+/* .reviews / .review are unused while the section carries no quotes — kept because the markup
+   goes back the day the practice supplies review text they are happy to publish */
 .reviews { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 0; padding: 0; list-style: none; }
 .review { display: grid; gap: 12px; padding: 26px 24px; border: 1px solid var(--line); border-radius: 3px; background: var(--bg); }
 .review p { margin: 0; font-family: var(--font-display); font-size: 19.5px; line-height: 1.45; }
 .review__who { font: 600 11px/1 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-.reviews__cta { margin: 26px 0 0; }
+.reviews__stars { margin: 18px 0 0; }
+.reviews__stars .stars { font-size: 20px; }
+.reviews__cta { margin: 22px 0 0; }
 
 /* ---------- contact ---------- */
 .contact-grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(24px, 3vw, 40px); align-items: start; }
