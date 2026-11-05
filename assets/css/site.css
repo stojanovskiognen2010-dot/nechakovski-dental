@@ -278,11 +278,11 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
 .fact__icon { grid-row: span 2; color: var(--gold); font-size: 22px; line-height: 0; padding-top: 3px; }
 .fact strong { font-family: var(--font-display); font-weight: 500; font-size: 19px; line-height: 1.25; }
 .fact > span:last-child { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
-.gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px;
+.gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;
   margin: clamp(32px, 5vw, 56px) auto 0; padding: 0; list-style: none; }
 .gallery figure { margin: 0; padding: 14px; height: 100%;
   border: 1px solid var(--line); border-radius: 3px; background: var(--paper); }
-/* the four photos are different shapes, so crop them to one ratio rather than letting
+/* the photos are different shapes, so crop them to one ratio rather than letting
    the row go ragged; height:auto is off here on purpose, the ratio does the sizing */
 .gallery img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 2px; }
 .gallery figcaption { margin-top: 11px; font-size: 12.5px; line-height: 1.5; color: var(--muted); }
@@ -504,8 +504,6 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
 
 @media (max-width: 1080px) {
   .reviews { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  /* stacked, the photo card spans the column — a 380px stub left the right half empty */
-  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 900px) {

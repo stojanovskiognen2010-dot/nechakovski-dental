@@ -207,6 +207,13 @@ Things only they can hand over. Everything else on the list below can be decided
       Dr. Hristina Stojcheska and Dr. Elena Vrtkovska have no photo at all and show a monogram.
       They cannot be cropped out of the group photo without knowing which person is which.
       Real photography would still lift the whole page.
+- [ ] **`curing-light.webp` is unconfirmed.** On 05.11.2026 the practice looked at the two other
+      listing photos — `surgery.webp` and `reception.webp` — and said "these are other people,
+      it is not us". Both are gone from the gallery, which is now two items wide, and the caption
+      that named Dr. Kiril and Dr. Aleksandar in the procedure shot went with them. Anyone can
+      upload to a Google listing: an earlier pass had already found one of the six belonging to
+      "MAK DENTAL". The curing light came from the same place and should be checked. The team
+      photographs and the KaVo are safe — the KaVo is off the practice's own old site.
 - [ ] **Remove `<meta name="robots" content="noindex, nofollow">`** from `index.html` on approval.
 
 No prices appear anywhere — the practice's own site publishes none.
