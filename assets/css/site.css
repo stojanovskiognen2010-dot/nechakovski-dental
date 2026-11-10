@@ -55,6 +55,10 @@ body {
   -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: clip;
   font-optical-sizing: auto; font-synthesis-weight: none;
   font-kerning: normal; font-variant-ligatures: common-ligatures contextual;
+  /* The practice asked that nothing ever sit outside its box. This only acts
+     when a word genuinely cannot fit the line, which on a narrow phone is the
+     long Macedonian compounds, so it breaks instead of crossing the border. */
+  overflow-wrap: break-word;
 }
 img { max-width: 100%; height: auto; display: block; }  /* height:auto or the height attr wins over aspect-ratio */
 .icon { width: 1em; height: 1em; flex: none; }
@@ -532,6 +536,11 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
 }
 @media (max-width: 640px) {
   .container { width: min(1140px, 100% - 32px); }
+  /* Two-up, a fact card is 157px wide on a 360px phone: the heading breaks
+     after every word and the body becomes a ribbon, and a long word such as
+     “еднократна” runs past the border. One per row below this. The gallery
+     captions underneath were the same ribbon, so it stacks here too. */
+  .facts, .gallery { grid-template-columns: minmax(0, 1fr); }
   :root { --header-h: 66px; }
   .hero__stats { gap: 22px; }
   .hero__stats strong { font-size: 30px; }
