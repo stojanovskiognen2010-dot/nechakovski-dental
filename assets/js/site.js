@@ -43,7 +43,7 @@
   var EN = {
     'skip': 'Skip to content',
     'brand.aria': 'Dr. Nechakovski — home',
-    'brand.sub': 'Dental practice · Bitola',
+    'brand.sub': 'Dental practice',
     'nav.aria': 'Main menu', 'nav.services': 'Services', 'nav.team': 'Team', 'nav.tech': 'Technology',
     'nav.reviews': 'Reviews', 'nav.contact': 'Contact', 'nav.book': 'Book a check-up',
     'lang.aria': 'Language', 'menu.label': 'Menu',
@@ -134,7 +134,7 @@
   var EL = {
     'skip': 'Μετάβαση στο περιεχόμενο',
     'brand.aria': 'Δρ. Νετσακόφσκι — αρχική',
-    'brand.sub': 'Οδοντιατρείο · Μπίτολα',
+    'brand.sub': 'Οδοντιατρείο',
     'nav.aria': 'Κύριο μενού', 'nav.services': 'Υπηρεσίες', 'nav.team': 'Ομάδα', 'nav.tech': 'Τεχνολογία',
     'nav.reviews': 'Κριτικές', 'nav.contact': 'Επικοινωνία', 'nav.book': 'Κλείστε ραντεβού',
     'lang.aria': 'Γλώσσα', 'menu.label': 'Μενού',

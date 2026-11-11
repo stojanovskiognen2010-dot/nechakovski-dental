@@ -35,6 +35,7 @@
   --danger: #B3261E;
   --font-display: "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
   --font-sans: "Commissioner", "Helvetica Neue", Arial, sans-serif;
+  --font-logo: Verdana, Geneva, "DejaVu Sans", sans-serif;  /* their wordmark, their choice */
   --ease: cubic-bezier(.22, .61, .36, 1);
   --shadow-card: 0 4px 24px rgba(20, 26, 36, .07);
   --shadow-float: 0 24px 60px rgba(20, 26, 36, .14);
@@ -126,39 +127,50 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
 .btn[disabled] { opacity: .4; cursor: not-allowed; }
 
 /* ---------- header ---------- */
+/* The practice asked for the fixed bar in their dark navy: on the ivory it was
+   the one part of the page with nothing to hold it apart from the hero. Every
+   colour inside it inverts, and the booking button goes gold — navy on navy
+   would have disappeared. */
 .header {
-  position: sticky; top: 0; z-index: 60; background: rgba(251, 248, 243, .94);
+  position: sticky; top: 0; z-index: 60; background: var(--navy); color: #fff;
   border-bottom: 1px solid transparent; transition: border-color .25s var(--ease), box-shadow .25s var(--ease);
 }
-.header.is-scrolled { border-bottom-color: var(--line); box-shadow: 0 1px 20px rgba(20, 26, 36, .05); }
+.header.is-scrolled { border-bottom-color: rgba(227, 207, 165, .26); box-shadow: 0 1px 20px rgba(2, 24, 41, .35); }
 .header__inner { display: flex; align-items: center; gap: 20px; min-height: var(--header-h); }
-.brand { display: flex; align-items: center; gap: 11px; text-decoration: none; color: var(--ink); }
-.brand__mark { color: var(--navy); font-size: 34px; line-height: 0; }
+.brand { display: flex; align-items: center; gap: 11px; text-decoration: none; color: #fff; }
+.brand__mark { color: var(--gold-soft); font-size: 34px; line-height: 0; }
 /* the real mark is a tall 80:168, so the square .icon box would leave dead air each side */
 .brand__mark .icon { width: .48em; }
 .brand__text { display: flex; flex-direction: column; }
-.brand__name { font-family: var(--font-display); font-weight: 500; font-size: 21px; letter-spacing: .005em; line-height: 1.1; }
-.brand__sub { font: 600 9.5px/1.4 var(--font-sans); letter-spacing: .14em; text-transform: uppercase; color: var(--gold-ink); }
+/* the practice sets its name in Verdana Bold — their wordmark, not ours. It is
+   a much wider face than the Garamond it replaced, so it is sized down and kept
+   on one line; the sizes below the fold of a phone are in the media queries. */
+.brand__name { font-family: var(--font-logo); font-weight: 700; font-size: clamp(12px, 3.9vw, 17px); letter-spacing: -.005em; line-height: 1.15; white-space: nowrap; }
+.brand__sub { font: 600 9.5px/1.4 var(--font-sans); letter-spacing: .14em; text-transform: uppercase; color: var(--gold-soft); }
 .nav { display: flex; align-items: center; gap: 14px; margin-left: auto; }
 .nav__links { display: flex; align-items: center; gap: 24px; margin: 0; padding: 0; list-style: none; }
 .nav__links a {
-  position: relative; color: var(--ink); text-decoration: none; font-size: 14.5px; font-weight: 500;
+  position: relative; color: rgba(255, 255, 255, .88); text-decoration: none; font-size: 14.5px; font-weight: 500;
   padding: 6px 0;
 }
+.nav__links a:hover, .nav__links a[aria-current="true"] { color: #fff; }
 .nav__links a::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
   background: var(--gold); transform: scaleX(0); transition: transform .25s var(--ease);
 }
 .nav__links a:hover::after, .nav__links a[aria-current="true"]::after { transform: scaleX(1); }
-.lang { display: flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); }
+.lang { display: flex; align-items: center; gap: 2px; padding: 3px; border: 1px solid rgba(255, 255, 255, .22); border-radius: 999px; background: rgba(255, 255, 255, .06); }
 .lang__btn {
   min-width: 36px; min-height: 30px; padding: 6px 9px; border: 0; border-radius: 999px;
-  background: none; color: var(--muted); font: 600 11.5px/1 var(--font-sans); letter-spacing: .06em; cursor: pointer;
+  background: none; color: rgba(255, 255, 255, .72); font: 600 11.5px/1 var(--font-sans); letter-spacing: .06em; cursor: pointer;
 }
-.lang__btn[aria-pressed="true"] { background: var(--navy); color: #fff; }
+.lang__btn[aria-pressed="true"] { background: var(--gold); color: var(--navy-ink); }
+/* .btn--primary is navy, which on a navy bar is nothing at all */
+.nav__book { background: var(--gold); color: var(--navy-ink); }
+.nav__book:hover { background: var(--gold-soft); }
 .burger {
   display: none; align-items: center; justify-content: center; width: 44px; height: 44px;
-  border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--ink);
+  border: 1px solid rgba(255, 255, 255, .26); border-radius: 999px; background: rgba(255, 255, 255, .06); color: #fff;
   font-size: 20px; cursor: pointer;
 }
 .burger__close { display: none; }
@@ -168,6 +180,19 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
 /* ---------- hero ---------- */
 .hero { position: relative; padding: clamp(48px, 6vw, 86px) 0 clamp(60px, 7vw, 100px); overflow: clip; }
 .hero__art { position: absolute; inset: 0; pointer-events: none; color: var(--gold); }
+/* The tooth out of their own mark, sunk into the background as a watermark.
+   The artwork is 80:168, so the box keeps that ratio and bleeds off the left
+   edge rather than being shrunk to fit. It sits under the arcs and under the
+   copy; at this opacity it reads as a shadow in the paper, not as a picture. */
+.hero__tooth {
+  position: absolute; left: -3%; top: 50%; translate: 0 -50%;
+  height: 96%; aspect-ratio: 80 / 168; color: var(--navy); opacity: .06;
+}
+/* Stacked, the hero is twice as tall and 96% of it makes a tooth wider than the
+   phone — an abstract smear rather than their mark. Size it off the width here. */
+@media (max-width: 900px) {
+  .hero__tooth { height: auto; width: 66%; }
+}
 .hero__art .arcs { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .22;
   -webkit-mask-image: linear-gradient(100deg, transparent 8%, #000 58%); mask-image: linear-gradient(100deg, transparent 8%, #000 58%); }
 .hero::after {
@@ -519,7 +544,8 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
   .burger { display: inline-flex; }
   .header.is-open .nav__links {
     display: grid; gap: 4px; position: absolute; top: var(--header-h); left: 0; right: 0;
-    padding: 14px 24px 20px; background: var(--bg); border-bottom: 1px solid var(--line); box-shadow: var(--shadow-card);
+    padding: 14px 24px 20px; background: var(--navy); border-bottom: 1px solid rgba(255, 255, 255, .14);
+    box-shadow: 0 18px 40px rgba(2, 24, 41, .4);
   }
   .header.is-open .nav__links a { display: block; padding: 11px 0; font-size: 16px; }
   .header { position: sticky; }
@@ -536,6 +562,13 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
 }
 @media (max-width: 640px) {
   .container { width: min(1140px, 100% - 32px); }
+  /* Verdana Bold on one line is a much wider wordmark than the Garamond it
+     replaced. The row is brand + language pills + burger, so the pills and the
+     gaps give back what the wordmark takes, or the burger lands outside the
+     container. */
+  .header__inner { gap: 10px; }
+  .lang__btn { min-width: 30px; padding: 6px 5px; }
+  .brand__sub { font-size: 8.5px; letter-spacing: .1em; }
   /* Two-up, a fact card is 157px wide on a 360px phone: the heading breaks
      after every word and the body becomes a ribbon, and a long word such as
      “еднократна” runs past the border. One per row below this. The gallery
@@ -551,6 +584,14 @@ img { max-width: 100%; height: auto; display: block; }  /* height:auto or the he
   .bk__steps li { flex: none; }
   .slots__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .footer__nav { margin-left: 0; width: 100%; }
+}
+
+/* 320px: the row is 37px over before this. The pills and the gaps give it back. */
+@media (max-width: 400px) {
+  .header__inner { gap: 8px; }
+  .brand { gap: 8px; }
+  .brand__mark { font-size: 30px; }
+  .lang__btn { min-width: 25px; padding: 6px 2px; font-size: 11px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
